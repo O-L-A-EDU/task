@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tile Club Match Game</title>
+  <link rel="stylesheet" href="card.css"/>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Start Screen -->
+    <div class="startGame">
+      <h1>Tile Club - Match Puzzle</h1>
+      <p>Select a difficulty</p>
+
+      <div class="difficulty-options">
+        <div class="difficulty-card" level="2" column="2" row="2">
+          <div class="card-inner">
+            <div class="card-front">Easy</div>
+            <div class="card-back">2 × 2</div>
+          </div>
+        </div>
+        <div class="difficulty-card" level="6" column="3" row="4">
+          <div class="card-inner">
+            <div class="card-front">Normal</div>
+            <div class="card-back">3 × 4</div>
+          </div>
+        </div>
+        <div class="difficulty-card" level="8" column="4" row="4">
+          <div class="card-inner">
+            <div class="card-front">Expert</div>
+            <div class="card-back">4 × 4</div>
+          </div>
+        </div>
+      </div>
+
+      <button id="startGameBtn" class="START BUTTON">Start Game</button>
+    </div>
+
+    <!-- Playground -->
+    <div class="playground hidden"></div>
+
+    <button id="restartBtn" class="hidden">Restart</button>
+  </div>
+
+  <script src="card.js"></script>
+</body>
+</html>
